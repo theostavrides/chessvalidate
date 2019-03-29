@@ -46,6 +46,117 @@ function newBoard() {
   return board;
 }
 
+class Game {
+  constructor(){
+    this.board = newBoard();
+    this.boardHistory = [];
+    this.turn = 'w';
+    this.canCastle = { white: { king: true, queen: true}, black: { king: true, queen: true} };
+    this.enPassantSquares = [];
+    this.halfMoveClock = 0;
+  }
+
+  move(square, destination){
+    let pieceType = this.pieceAt(square);
+
+    if (!this.pieceBelongsToPlayer(pieceType)) {
+      throw "invalid move, piece doesn't belong to current player";
+    }
+
+    if (this.inCheck(this.turn)) {
+      //move must get out of check -> compare new position with old position
+    }
+
+    if (this.validMove(square, pieceType, destination)) {
+      //must fix to work for en passant (the captured pawn needs to be deleted on
+      //a different square from where the capturing pawn goes)
+      this.board[destination] = this.board[square];
+      this.board[square] = 0;
+    } else {
+      throw "invalid move, piece cannot move to requested square"
+    }
+  }
+
+  pieceAt(square){
+    return this.board[square]
+  }
+
+  pieceBelongsToPlayer(pieceType) {
+    if (this.turn === 'w' && pieceType > 0) return true
+    if (this.turn === 'b' && pieceType < 0) return true
+    return false
+  }
+
+
+
+  validMove(square, pieceType, destination) {
+    if (pieceType === 1 || pieceType === -1) {
+      return this.validPawnMove(square, pieceType, destination)
+    } else if (pieceType === 2 || pieceType === -2) {
+      return this.validKnightMove(square, pieceType, destination)
+    } else if (pieceType === 3 || pieceType === -3) {
+      return this.validBishopMove(square, pieceType, destination)
+    } else if (pieceType === 4 || pieceType === -4) {
+      return this.validRookMove(square, pieceType, destination)
+    } else if (pieceType === 5 || pieceType === -5) {
+      return this.validQueenMove(square, pieceType, destination)
+    } else if (pieceType === 6 || pieceType === -6) {
+      return this.validKingMove(square, pieceType, destination)
+    } else {
+      return false;
+    }
+  }
+
+  validPawnMove(square, pieceType, destination) {
+    //check if can move 1 or two squares
+    //check if can en passant
+  }
+  validKnightMove(square, pieceType, destination) {}
+  validBishopMove(square, pieceType, destination) {}
+  validRookMove(square, pieceType, destination) {}
+  validQueenMove(square, pieceType, destination) {}
+  validKingMove(square, pieceType, destination) {
+    //check castle & normal moves
+  }
+
+  inCheck() {}
+  isCheckmate(){}
+}
+
+// Chess Functions
+
+function move(square, destination) {
+  // 1. Current player in check?
+    // Does move stop check?
+      //true -> move piece
+      //false -> return error
+  // 2. What is the piece? DONE
+      //does piece belong to current player? DONE
+  // 3. Is move legal?
+    //true -> move piece & update Game object (board, boardhistory, turn, etc.)
+    //false -> return error
+
+  // 4. Does move cause check?
+    //true -> does checkmate?
+      //true -> end game
+      //false ->
+    //false, nothing
+}
+
+
+
+
+
+let game = new Game();
+
+
+//displayBoard(game.board)
+
+
+
+
+
+// Display Functions
 function displayBoard(board) {
   for (let i = 11; i >= 0; i--) {
     let indexes = [];
@@ -88,28 +199,6 @@ function printIndexBoardReference() {
     console.log(line)
   }
 }
-
-function createCanEnPassantObj() {
-  let table = {}
-  let
-}
-class Game {
-  constructor(){
-    this.board = newBoard();
-    this.fiftyMoveRule = 0;
-    this.canCastle = { white: { king: true, queen: true}, black: { king: true, queen: true} };
-    this.canEnPassant =
-    this.boardHistory = [];
-    this.turn = 'w';
-  }
-}
-
-let game = new Game();
-console.log(game.canCastle)
-
-
-
-
 
 
 
