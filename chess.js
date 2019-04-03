@@ -87,20 +87,18 @@ class Game {
     return false;
   }
 
-
-
   validMove(square, pieceType, destination) {
-    if (pieceType === 1 || pieceType === -1) {
+    if (Math.abs(pieceType) === 1) {
       return this.validPawnMove(square, pieceType, destination);
-    } else if (pieceType === 2 || pieceType === -2) {
+    } else if (Math.abs(pieceType) === 2) {
       return this.validKnightMove(square, pieceType, destination);
-    } else if (pieceType === 3 || pieceType === -3) {
+    } else if (Math.abs(pieceType) === 3) {
       return this.validBishopMove(square, pieceType, destination);
-    } else if (pieceType === 4 || pieceType === -4) {
+    } else if (Math.abs(pieceType) === 4) {
       return this.validRookMove(square, pieceType, destination);
-    } else if (pieceType === 5 || pieceType === -5) {
+    } else if (Math.abs(pieceType) === 5) {
       return this.validQueenMove(square, pieceType, destination);
-    } else if (pieceType === 6 || pieceType === -6) {
+    } else if (Math.abs(pieceType) === 6) {
       return this.validKingMove(square, pieceType, destination);
     } else {
       return false;
@@ -164,7 +162,6 @@ function printIndexBoardReference() {
       } else {
         line += i.toString() + j.toString() + '  ';
       }
-
     }
     console.log(line);
   }

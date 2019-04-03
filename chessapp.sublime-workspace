@@ -1,0 +1,1074 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"piece",
+				"pieceType"
+			],
+			[
+				"pi",
+				"pieceType"
+			],
+			[
+				"pie",
+				"pieceType"
+			],
+			[
+				"boar",
+				"boardObject"
+			],
+			[
+				"d",
+				"decimalToHex"
+			],
+			[
+				"re",
+				"remainders"
+			],
+			[
+				"rem",
+				"remainders"
+			],
+			[
+				"ani",
+				"animate"
+			],
+			[
+				"anim",
+				"animationSpeed"
+			],
+			[
+				"char",
+				"chartHeightPixels"
+			],
+			[
+				"chart",
+				"chartElement"
+			],
+			[
+				"new",
+				"newTop"
+			],
+			[
+				"ne",
+				"newTop"
+			],
+			[
+				"bar",
+				"barsAndLines"
+			],
+			[
+				"ba",
+				"barsAndLines"
+			],
+			[
+				"ra",
+				"randomSet"
+			],
+			[
+				"ch",
+				"chartHeightPixels"
+			],
+			[
+				"b",
+				"biggest"
+			],
+			[
+				"cur",
+				"currentValues"
+			],
+			[
+				"da",
+				"dataSet"
+			],
+			[
+				"bars",
+				"barsAndLines"
+			],
+			[
+				"ran",
+				"randomSet"
+			],
+			[
+				"data",
+				"dataSet"
+			],
+			[
+				"arr",
+				"arrayIndex"
+			],
+			[
+				"cre",
+				"createRandomDataSet"
+			],
+			[
+				"Va",
+				"valueMax"
+			],
+			[
+				"car",
+				"chartWidth"
+			],
+			[
+				"barL",
+				"barLabelElement"
+			],
+			[
+				"build",
+				"buildLabelElement"
+			],
+			[
+				"PA",
+				"parentElement"
+			],
+			[
+				"ti",
+				"titleLabelFontSize"
+			],
+			[
+				"tit",
+				"titleText"
+			],
+			[
+				"title",
+				"titleElement"
+			],
+			[
+				"bui",
+				"buildTitleElement"
+			],
+			[
+				"l",
+				"longestName"
+			],
+			[
+				"par",
+				"parentElement"
+			],
+			[
+				"cha",
+				"chartHeight"
+			],
+			[
+				"pare",
+				"parseFloat"
+			],
+			[
+				"make",
+				"makeChartElementCss"
+			],
+			[
+				"lin",
+				"lineY"
+			],
+			[
+				"line",
+				"lineNumber"
+			],
+			[
+				"ma",
+				"maxBarHeight"
+			],
+			[
+				"draw",
+				"drawLines"
+			],
+			[
+				"p",
+				"paddingTop"
+			],
+			[
+				"get",
+				"getBarHeight"
+			],
+			[
+				"ren",
+				"renameImages"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"gue",
+				"guess"
+			],
+			[
+				"gu",
+				"guessHistory"
+			],
+			[
+				"di",
+				"directions"
+			],
+			[
+				"f",
+				"findNewDirection"
+			],
+			[
+				"che",
+				"checkDiagonals"
+			],
+			[
+				"ge",
+				"generatedBoard"
+			],
+			[
+				"s",
+				"squareCode"
+			],
+			[
+				"row",
+				"rowNum"
+			],
+			[
+				"r",
+				"rowNum"
+			],
+			[
+				"col",
+				"colNum"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"cas",
+				"caseStyle"
+			],
+			[
+				"case",
+				"caseStyleSorted"
+			],
+			[
+				"pri",
+				"priority1"
+			],
+			[
+				"i",
+				"input"
+			],
+			[
+				"to",
+				"toUpperCase"
+			],
+			[
+				"g",
+				"give"
+			],
+			[
+				"date",
+				"dateArr"
+			],
+			[
+				"Lo",
+				"LoopyLighthouse"
+			],
+			[
+				"ye",
+				"yearOfBirth"
+			],
+			[
+				"u",
+				"upperH"
+			],
+			[
+				"Ran",
+				"randomInt"
+			],
+			[
+				"direct",
+				"directions"
+			],
+			[
+				"direc",
+				"directions"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"pro",
+				"probabilities"
+			],
+			[
+				"dire",
+				"directions"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"port",
+				"portfolio"
+			],
+			[
+				"arro",
+				"arrowR"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"ali",
+				"align-self"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"mo",
+				"mouseY"
+			],
+			[
+				"m",
+				"mouseX"
+			],
+			[
+				"ini",
+				"initializeShapes"
+			],
+			[
+				"move",
+				"moveshapes"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"road",
+				"roadGraph"
+			],
+			[
+				"coo",
+				"constructor"
+			],
+			[
+				"Iter",
+				"okIterator"
+			],
+			[
+				"porto",
+				"prototype"
+			],
+			[
+				"e",
+				"existInRanges"
+			],
+			[
+				"fi",
+				"findScriptFromChar"
+			],
+			[
+				"obj",
+				"objectToArray"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"deep",
+				"deepEqual"
+			],
+			[
+				"co",
+				"compare"
+			],
+			[
+				"typ",
+				"typeof"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"a",
+				"aKeys"
+			],
+			[
+				"leng",
+				"length-1"
+			],
+			[
+				"nth",
+				"nthRecursive"
+			],
+			[
+				"list",
+				"listToArray"
+			],
+			[
+				"li",
+				"listToArray"
+			],
+			[
+				"ar",
+				"arrayToList"
+			],
+			[
+				"count",
+				"countChar"
+			],
+			[
+				"find",
+				"findSolution"
+			],
+			[
+				"size",
+				"size-1"
+			],
+			[
+				"f3",
+				"f3result"
+			],
+			[
+				"reg",
+				"regexps"
+			],
+			[
+				"mat",
+				"matches"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"sh",
+				"shift"
+			],
+			[
+				"sho",
+				"showcaseP1"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"fo",
+				"font-weight"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "chess.js",
+			"settings":
+			{
+				"buffer_size": 4355,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".jshintrc",
+			"settings":
+			{
+				"buffer_size": 17,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter-jshint\n--------------------\n\n  SublimeLinter-jshint\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to jshint.\n  \n  Please read the installation instructions at:\n  \n  https://github.com/SublimeLinter/SublimeLinter-jshint\n",
+			"settings":
+			{
+				"buffer_size": 333,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "todo.md",
+			"settings":
+			{
+				"buffer_size": 415,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "todo.md"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"hint",
+				"JSHint: Set Linting Preferences"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jshint",
+				"JSHint: Clear Annotations"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"linter togg",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sublime linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sublime l",
+				"SublimeLinter: Goto Error"
+			],
+			[
+				"subl",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa\tge control insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 430.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/theostavrides/Desktop/chessapp"
+	],
+	"file_history":
+	[
+		"/Users/theostavrides/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/theostavrides/Desktop/chessapp/chess.js",
+		"/Users/theostavrides/Desktop/chess/chess.js",
+		"/Users/theostavrides/Desktop/HTML-js-css (templ)/site.html",
+		"/Users/theostavrides/Desktop/HTML-js-css (templ)/script.js",
+		"/Users/theostavrides/Library/Application Support/Sublime Text 3/Packages/ESLint/Default (OSX).sublime-keymap",
+		"/Users/theostavrides/Library/Application Support/Sublime Text 3/Packages/ESLint/ESLint.sublime-settings",
+		"/Users/theostavrides/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/theostavrides/Desktop/chess/meow.js",
+		"/Users/theostavrides/Desktop/chess/indexDiagram.png",
+		"/Users/theostavrides/Desktop/chess/pieceStartDiagram.png",
+		"/Users/theostavrides/lighthouse/w1d2/day-calc/day-calculator.js",
+		"/Users/theostavrides/lighthouse/w1d2/day-calc/chicken.md",
+		"/Users/theostavrides/lighthouse/w1d2/scope.js",
+		"/Users/theostavrides/lighthouse/w1d1/min/min.js",
+		"/Users/theostavrides/lighthouse/w1d1/adding-numbers/argv.js",
+		"/Users/theostavrides/lighthouse/w1d1/sum.js",
+		"/Users/theostavrides/lighthouse/lighthouse-web-notes/Week_1/Day_1/What_Should_I_Do_for_Lunch_Tips.md",
+		"/Users/theostavrides/lighthouse/lighthouse-web-notes/README.md",
+		"/Users/theostavrides/Documents/Programming/generative/circles/script.js",
+		"/Users/theostavrides/Documents/Programming2/PYTHON/challenge-Defuse.py",
+		"/Users/theostavrides/Documents/Programming2/Project/filemaker.py",
+		"/Users/theostavrides/Desktop/stretch-project-1/barchart/script.js",
+		"/Users/theostavrides/Desktop/stretch-project-1/barchart/site.html",
+		"/Users/theostavrides/Desktop/stretch-project-1/barchart/test.js",
+		"/Users/theostavrides/Desktop/generative/circles/script.js",
+		"/Users/theostavrides/Desktop/stretch-project-1/barchart/package.json",
+		"/Users/theostavrides/Desktop/basic/script.js",
+		"/Users/theostavrides/Desktop/ejs/script.js",
+		"/Users/theostavrides/Desktop/exercises/package.json",
+		"/Users/theostavrides/Desktop/exercises/script.js",
+		"/Users/theostavrides/Desktop/generative/geometry/geolib.js",
+		"/Users/theostavrides/Desktop/generative/geometry/script.js",
+		"/Users/theostavrides/lighthouse/javascripting/function-arguments.js",
+		"/Users/theostavrides/lighthouse/javascripting/functions.js",
+		"/Users/theostavrides/lighthouse/javascripting/objects.js",
+		"/Users/theostavrides/lighthouse/javascripting/object-properties.js",
+		"/Users/theostavrides/lighthouse/javascripting/scope.js",
+		"/Users/theostavrides/lighthouse/patchwork/index.html",
+		"/Users/theostavrides/lighthouse/patchwork/add-theostavrides.txt",
+		"/Users/theostavrides/lighthouse/patchwork/hello.txt",
+		"/Users/theostavrides/lighthouse/javascripting/array-filtering.js",
+		"/Users/theostavrides/lighthouse/javascripting/arrays.js",
+		"/Users/theostavrides/lighthouse/javascripting/for-loop.js",
+		"/Users/theostavrides/lighthouse/javascripting/if-statement.js",
+		"/Users/theostavrides/lighthouse/javascripting/revising-strings.js",
+		"/Users/theostavrides/lighthouse/javascripting/introduction.js",
+		"/Users/theostavrides/lighthouse/javascripting/accessing-array-values.js",
+		"/Users/theostavrides/lighthouse/javascripting/looping-through-arrays.js",
+		"/Users/theostavrides/Desktop/pjt-jordan_peterson-24.jpg",
+		"/Users/theostavrides/Desktop/generative/triangle1/style.css",
+		"/Users/theostavrides/Desktop/generative/triangle1/script.js",
+		"/Users/theostavrides/Desktop/generative/zig3/script.js",
+		"/Users/theostavrides/Desktop/generative/zig2/script.js",
+		"/Users/theostavrides/Desktop/generative/site.html",
+		"/Users/theostavrides/Desktop/generative/style.css",
+		"/Users/theostavrides/Desktop/generative/script.js",
+		"/Users/theostavrides/Desktop/game/server.js",
+		"/Users/theostavrides/Desktop/game/views/index.ejs",
+		"/Users/theostavrides/Documents/Programming2018/notes/solutions to hard exercises/counter.js",
+		"/Users/theostavrides/Desktop/game/index.ejs",
+		"/Users/theostavrides/Desktop/HTML-js-css (templ)/script2.js",
+		"/Users/theostavrides/websites/theostavrides/assets/gifchaos/style.css",
+		"/Users/theostavrides/websites/theostavrides/assets/css/wavestyle.css",
+		"/Users/theostavrides/websites/theostavrides/views/wavesite.ejs",
+		"/Users/theostavrides/websites/theostavrides/server.js",
+		"/Users/theostavrides/websites/theostavrides/views/portfolio.ejs",
+		"/Users/theostavrides/websites/theostavrides/assets/gifchaos/script.js",
+		"/Users/theostavrides/websites/theostavrides/views/gifchaos.ejs",
+		"/Users/theostavrides/websites/theostavrides/views/site.ejs",
+		"/Users/theostavrides/websites/theostavrides/assets/gifchaos/site.ejs",
+		"/Users/theostavrides/websites/theostavrides/assets/css/style.css",
+		"/Users/theostavrides/websites/theostavrides/assets/js/script.js",
+		"/Users/theostavrides/Desktop/Wave Program/wavesite.html",
+		"/Users/theostavrides/Desktop/theoenglishtest/site.html",
+		"/Users/theostavrides/Desktop/theoenglishtest/style.css",
+		"/Users/theostavrides/websites/theostavrides/model.js",
+		"/Users/theostavrides/websites/theostavrides/views/site.html",
+		"/Users/theostavrides/websites/theostavrides/app.yaml",
+		"/Users/theostavrides/websites/theostavrides/package.json",
+		"/Users/theostavrides/websites/theoenglish/package.json",
+		"/Users/theostavrides/websites/theoenglish/app.yaml",
+		"/Users/theostavrides/Desktop/navbar/style.css",
+		"/Users/theostavrides/Desktop/navbar/script2.js",
+		"/Users/theostavrides/Desktop/navbar/site.html",
+		"/Users/theostavrides/Desktop/navbar/onlinelessons.html",
+		"/Users/theostavrides/Desktop/navbar/script.js",
+		"/Users/theostavrides/Desktop/navbar/bio.html",
+		"/Users/theostavrides/Desktop/navbar/contact.html",
+		"/Users/theostavrides/Desktop/node/scriptData.js",
+		"/Users/theostavrides/Desktop/node/filter.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/EJS/SmbolIteratorClassMatrix.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/solutions to hard exercises/recursionEJS.js",
+		"/Users/theostavrides/Desktop/chess.js",
+		"/Users/theostavrides/Desktop/nodeAsync/index.js",
+		"/Users/theostavrides/Desktop/New Project Template/script.js",
+		"/Users/theostavrides/Desktop/theoenglish/assets/js/script.js",
+		"/Users/theostavrides/Desktop/theoenglish/assets/css/style.css",
+		"/Users/theostavrides/Desktop/theoenglish/server.js",
+		"/Users/theostavrides/Desktop/theoenglish/views/about.ejs",
+		"/Users/theostavrides/Desktop/theoenglish/views/services.ejs",
+		"/Users/theostavrides/Desktop/theoenglish/views/site.ejs",
+		"/Users/theostavrides/Desktop/New Project Template/site.html",
+		"/Users/theostavrides/Documents/Programming2018/notes/node/promises.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/node/AsyncAwait.js",
+		"/Users/theostavrides/Desktop/pigchat2/public/js/client.js",
+		"/Users/theostavrides/Desktop/pigchat2/server.js",
+		"/Users/theostavrides/Desktop/pigchat/server.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/node/asyncWaterfall.js",
+		"/Users/theostavrides/Desktop/scrape/server.js",
+		"/Users/theostavrides/Desktop/nodeAsync/package.json",
+		"/Users/theostavrides/Documents/Programming2018/notes/node/asyncParallel.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/node/basic_scrape.js",
+		"/Users/theostavrides/Desktop/scrape/package.json",
+		"/Users/theostavrides/Desktop/nodetest/server.js",
+		"/Users/theostavrides/Desktop/gamtest.js",
+		"/Users/theostavrides/Desktop/nodetest/package.json",
+		"/Users/theostavrides/Documents/Programming2018/notes/solutions to hard exercises/inheritance.js",
+		"/Users/theostavrides/Desktop/nodetest/index.js",
+		"/Users/theostavrides/Desktop/test/script.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/solutions to hard exercises/function-closure.js",
+		"/Users/theostavrides/Documents/Programming2018/notes/solutions to hard exercises/bind-this-scope.js",
+		"/Users/theostavrides/Desktop/project/public/css/style.css",
+		"/Users/theostavrides/Desktop/project/public/js/client.js",
+		"/Users/theostavrides/Desktop/project/public/js/keydrown.js",
+		"/Users/theostavrides/Desktop/project/public/index.html",
+		"/Users/theostavrides/Desktop/project/server.js",
+		"/Users/theostavrides/Documents/Programming2018/Tutorials/gameloops/script.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 191.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "chess.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4313,
+								4313
+							]
+						],
+						"settings":
+						{
+							"SL.132.region_keys":
+							[
+							],
+							"SL.25.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2806.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".jshintrc",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 17,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Settings).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "todo.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"auto_name": "todo.md",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 57.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 133.0
+	},
+	"output.exec":
+	{
+		"height": 133.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "chessapp.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"chess.js"
+			],
+			[
+				"test",
+				"~/lighthouse/w1d2/test.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"musicMenu"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
