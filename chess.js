@@ -3,16 +3,16 @@ function newBoard() {
     let board = [];
     for (let i = 0; i < 128; i++) {
       if (i < 21 || i > 98) {
-        board.push(7)
+        board.push(7);
       } else if (i % 10 === 0) {
-        board.push(7)
+        board.push(7);
       } else if (i.toString().split('').pop() === '9') {
-        board.push(7)
+        board.push(7);
       } else {
-        board.push(0)
+        board.push(0);
       }
     }
-    return board
+    return board;
   }
 
   let board = emptyBoard();
@@ -73,35 +73,35 @@ class Game {
       this.board[destination] = this.board[square];
       this.board[square] = 0;
     } else {
-      throw "invalid move, piece cannot move to requested square"
+      throw "invalid move, piece cannot move to requested square";
     }
   }
 
   pieceAt(square){
-    return this.board[square]
+    return this.board[square];
   }
 
   pieceBelongsToPlayer(pieceType) {
-    if (this.turn === 'w' && pieceType > 0) return true
-    if (this.turn === 'b' && pieceType < 0) return true
-    return false
+    if (this.turn === 'w' && pieceType > 0) return true;
+    if (this.turn === 'b' && pieceType < 0) return true;
+    return false;
   }
 
 
 
   validMove(square, pieceType, destination) {
     if (pieceType === 1 || pieceType === -1) {
-      return this.validPawnMove(square, pieceType, destination)
+      return this.validPawnMove(square, pieceType, destination);
     } else if (pieceType === 2 || pieceType === -2) {
-      return this.validKnightMove(square, pieceType, destination)
+      return this.validKnightMove(square, pieceType, destination);
     } else if (pieceType === 3 || pieceType === -3) {
-      return this.validBishopMove(square, pieceType, destination)
+      return this.validBishopMove(square, pieceType, destination);
     } else if (pieceType === 4 || pieceType === -4) {
-      return this.validRookMove(square, pieceType, destination)
+      return this.validRookMove(square, pieceType, destination);
     } else if (pieceType === 5 || pieceType === -5) {
-      return this.validQueenMove(square, pieceType, destination)
+      return this.validQueenMove(square, pieceType, destination);
     } else if (pieceType === 6 || pieceType === -6) {
-      return this.validKingMove(square, pieceType, destination)
+      return this.validKingMove(square, pieceType, destination);
     } else {
       return false;
     }
@@ -132,33 +132,33 @@ function displayBoard(board) {
     let indexes = [];
     for (let j = 0; j < 10; j++) {
       if (i === 11 || i === 10) {
-        indexes.push(parseInt(i.toString() + j.toString()))
+        indexes.push(parseInt(i.toString() + j.toString()));
       } else if (i === 0 ) {
-        indexes.push(parseInt(j.toString()))
+        indexes.push(parseInt(j.toString()));
       } else {
-        indexes.push(parseInt(i.toString() + j.toString()))
+        indexes.push(parseInt(i.toString() + j.toString()));
       }
 
     }
-    let pieces = ''
+    let pieces = '';
     for (let e of indexes) {
       if (board[e].toString().length > 1) {
-        pieces += board[e].toString()
+        pieces += board[e].toString();
       } else {
-        pieces += ' ' + board[e].toString()
+        pieces += ' ' + board[e].toString();
       }
 
     }
-    console.log(pieces)
+    console.log(pieces);
   }
 }
 
 function printIndexBoardReference() {
   for (let i = 11; i >= 0; i--) {
-    let line = ''
+    let line = '';
     for (let j = 0; j < 10; j++) {
       if (i === 11 || i === 10) {
-        line += i.toString() + j.toString() + ' '
+        line += i.toString() + j.toString() + ' ';
       } else if (i === 0 ) {
         line += j.toString() + '   ';
       } else {
@@ -166,7 +166,7 @@ function printIndexBoardReference() {
       }
 
     }
-    console.log(line)
+    console.log(line);
   }
 }
 
