@@ -519,44 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "chess.js",
-			"settings":
-			{
-				"buffer_size": 4355,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".jshintrc",
-			"settings":
-			{
-				"buffer_size": 17,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nSublimeLinter-jshint\n--------------------\n\n  SublimeLinter-jshint\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to jshint.\n  \n  Please read the installation instructions at:\n  \n  https://github.com/SublimeLinter/SublimeLinter-jshint\n",
-			"settings":
-			{
-				"buffer_size": 333,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"file": "todo.md",
-			"settings":
-			{
-				"buffer_size": 415,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "todo.md"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -569,6 +531,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -675,8 +641,10 @@
 	],
 	"file_history":
 	[
-		"/Users/theostavrides/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
 		"/Users/theostavrides/Desktop/chessapp/chess.js",
+		"/Users/theostavrides/Desktop/chessapp/chessapp.sublime-project",
+		"/Users/theostavrides/Desktop/chessapp/todo.md",
+		"/Users/theostavrides/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
 		"/Users/theostavrides/Desktop/chess/chess.js",
 		"/Users/theostavrides/Desktop/HTML-js-css (templ)/site.html",
 		"/Users/theostavrides/Desktop/HTML-js-css (templ)/script.js",
@@ -800,13 +768,11 @@
 		"/Users/theostavrides/Desktop/project/public/css/style.css",
 		"/Users/theostavrides/Desktop/project/public/js/client.js",
 		"/Users/theostavrides/Desktop/project/public/js/keydrown.js",
-		"/Users/theostavrides/Desktop/project/public/index.html",
-		"/Users/theostavrides/Desktop/project/server.js",
-		"/Users/theostavrides/Documents/Programming2018/Tutorials/gameloops/script.js"
+		"/Users/theostavrides/Desktop/project/public/index.html"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -837,141 +803,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "chess.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4313,
-								4313
-							]
-						],
-						"settings":
-						{
-							"SL.132.region_keys":
-							[
-							],
-							"SL.25.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2806.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": ".jshintrc",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 17,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Settings).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								333,
-								333
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "todo.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 415,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								388,
-								388
-							]
-						],
-						"settings":
-						{
-							"auto_name": "todo.md",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -1016,7 +855,7 @@
 	"project": "chessapp.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":

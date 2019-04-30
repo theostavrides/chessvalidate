@@ -123,8 +123,11 @@ class Game {
 
 let game = new Game();
 
+console.log(game)
 
-// Display Functions
+
+/******* Display Functions ******/
+
 function displayBoard(board) {
   for (let i = 11; i >= 0; i--) {
     let indexes = [];
@@ -166,9 +169,3 @@ function printIndexBoardReference() {
     console.log(line);
   }
 }
-
-
-
-
-
-
