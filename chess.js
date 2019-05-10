@@ -58,33 +58,42 @@ class Game {
   }
 
   move(square, destination){
-    const pieceType = this.pieceAt(square);
+    const piece = this.pieceAt(square);
 
-    if (!this.pieceBelongsToPlayer(pieceType)) {
-      throw new Error(`Invalid move: piece doesn't belong to current player`);
+    if (!this.squareOnBoard(square) || !this.squareOnBoard(destination)) {
+      throw new Error(`Home square or destination square doesn't exist`);
+    }
+
+    if (!this.pieceBelongsToPlayer(piece)) {
+      throw new Error(`Piece doesn't belong to current player`);
     }
 
     if (!this.validDestination(destination)) {
-      throw new Error(`Invalid move: destination square occupied by current player or off board`)
+      throw new Error(`Destination square occupied by current player`)
     }
 
     if (this.inCheck(this.turn)) {
     }
 
-    if (!this.validMove(square, pieceType, destination)) {
+    if (!this.validMove(square, piece, destination)) {
       throw new Error("Invalid move: piece cannot move to destination square");
     }
 
     this.board[square] = 0;
-    this.board[destination] = pieceType;
+    this.board[destination] = piece;
+    this.history.push(this.board);
     this.endTurn();
-    this.history.push(this.board)
     return this.board;
+  }
+
+  squareOnBoard(square){
+    if (square < 20 || square > 98) return false;
+    if (square.toString().slice(-1) == 0 || square.toString().slice(-1) == 9 ) return false;
+    return true;
   }
 
   validDestination(destination){
     if (this.pieceBelongsToPlayer(this.board[destination])) return false;
-    if (this.board[destination] === 7) return false
     return true;
   }
 
@@ -96,48 +105,58 @@ class Game {
     return this.board[square];
   }
 
-  pieceBelongsToPlayer(pieceType) {
-    if (this.turn === 'w' && pieceType > 0 && pieceType !== 7) return true;
-    if (this.turn === 'b' && pieceType < 0) return true;
+  pieceBelongsToPlayer(piece) {
+    if (this.turn === 'w' && piece > 0 && piece !== 7) return true;
+    if (this.turn === 'b' && piece < 0) return true;
     return false;
   }
 
-  validMove(square, pieceType, destination) {
-    if (Math.abs(pieceType) === 1) {
-      return this.validPawnMove(square, pieceType, destination);
-    } else if (Math.abs(pieceType) === 2) {
-      return this.validKnightMove(square, pieceType, destination);
-    } else if (Math.abs(pieceType) === 3) {
-      return this.validBishopMove(square, pieceType, destination);
-    } else if (Math.abs(pieceType) === 4) {
-      return this.validRookMove(square, pieceType, destination);
-    } else if (Math.abs(pieceType) === 5) {
-      return this.validQueenMove(square, pieceType, destination);
-    } else if (Math.abs(pieceType) === 6) {
-      return this.validKingMove(square, pieceType, destination);
+  validMove(square, piece, destination) {
+    if (Math.abs(piece) === 1) {
+      return this.validPawnMove(square, piece, destination);
+    } else if (Math.abs(piece) === 2) {
+      return this.validKnightMove(square, piece, destination);
+    } else if (Math.abs(piece) === 3) {
+      return this.validBishopMove(square, piece, destination);
+    } else if (Math.abs(piece) === 4) {
+      return this.validRookMove(square, piece, destination);
+    } else if (Math.abs(piece) === 5) {
+      return this.validQueenMove(square, piece, destination);
+    } else if (Math.abs(piece) === 6) {
+      return this.validKingMove(square, piece, destination);
     } else {
       return false;
     }
   }
 
-  validPawnMove(square, pieceType, destination) {
+  validPawnMove(square, piece, destination) {
     return true;
   }
-  validKnightMove(square, pieceType, destination) {
-    const legalMoves = [8,12,19,21];
+  validKnightMove(square, piece, destination) {
+    const legalMoves = [8, 12 ,19 ,21];
     if (!legalMoves.includes(Math.abs(square - destination))) return false;
     return true;
   }
-  validBishopMove(square, pieceType, destination) {
+  validBishopMove(square, piece, destination) {
+    const legalMoves = [9, 18, 27, 36, 45, 54, 63, 11, 22, 33, 44, 55, 66, 77];
+    if (!legalMoves.includes(Math.abs(square - destination))) return false
     return true;
   }
-  validRookMove(square, pieceType, destination) {
+  validRookMove(square, piece, destination) {
+    let onSameRank;
+    let onSameFile;
+    if (square.toString()[0] === destination.toString()[0]) onSameRank = true;
+    if (square.toString()[1] === destination.toString()[1]) onSameFile = true;
+    if (!(onSameFile || onSameRank)) return false;
     return true;
   }
-  validQueenMove(square, pieceType, destination) {
+  validQueenMove(square, piece, destination) {
+    if ( !(this.validRookMove(square, piece, destination) || this.validBishopMove(square, piece, destination)) ) return false;
     return true;
   }
-  validKingMove(square, pieceType, destination) {
+  validKingMove(square, piece, destination) {
+    const legalMoves = [1, 9, 10, 11];
+    if (!legalMoves.includes(Math.abs(square - destination))) return false;
     return true;
   }
 
@@ -152,13 +171,21 @@ let game = new Game();
 // displayBoard(game.move(81,71))
 
 //test knight moves
-displayBoard(game.move(27,27+19))
-displayBoard(game.move(92,92-19))
-displayBoard(game.move(46,65))
-displayBoard(game.move(73,65))
+// displayBoard(game.move(27,27+19))
+// displayBoard(game.move(92,92-19))
+// displayBoard(game.move(46,65))
+// displayBoard(game.move(73,65))
 
-
-
+displayBoard(game.move(35,55))
+displayBoard(game.move(85,65))
+displayBoard(game.move(25,35))
+displayBoard(game.move(95,85))
+displayBoard(game.move(35,46))
+displayBoard(game.move(85,76)) //black
+displayBoard(game.move(26,53))
+displayBoard(game.move(94,85))
+displayBoard(game.move(24,35))
+displayBoard(game.move(85,52))
 /******* Display Functions ******/
 
 function displayBoard(board) {
