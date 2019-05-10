@@ -49,11 +49,11 @@ function newBoard() {
 class Game {
   constructor(){
     this.board = newBoard();
-    this.boardHistory = [];
+    this.history = [];
     this.turn = 'w';
     this.canCastle = { white: { king: true, queen: true}, black: { king: true, queen: true} };
     this.enPassantSquares = [];
-    this.halfMoveClock = 0;
+    this.moves = 0;
   }
 
   move(square, destination){
