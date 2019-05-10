@@ -2,7 +2,7 @@
 function newBoard() {
   function emptyBoard() {
     let board = [];
-    for (let i = 0; i < 128; i++) {
+    for (let i = 0; i < 120; i++) {
       if (i < 21 || i > 98) {
         board.push(7);
       } else if (i % 10 === 0) {
@@ -83,9 +83,7 @@ class Game {
   }
 
   validDestination(destination){
-    console.log('a')
     if (this.pieceBelongsToPlayer(this.board[destination])) return false;
-    console.log('b')
     if (this.board[destination] === 7) return false
     return true;
   }
@@ -127,7 +125,6 @@ class Game {
   }
   validKnightMove(square, pieceType, destination) {
     const legalMoves = [8,12,19,21];
-    console.log(square, destination)
     if (!legalMoves.includes(Math.abs(square - destination))) return false;
     return true;
   }
@@ -188,6 +185,7 @@ function displayBoard(board) {
     }
     console.log(pieces);
   }
+  console.log('\n')
 }
 
 function printIndexBoardReference() {
