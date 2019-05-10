@@ -1,3 +1,4 @@
+
 function newBoard() {
   function emptyBoard() {
     let board = [];
@@ -57,24 +58,40 @@ class Game {
   }
 
   move(square, destination){
-    let pieceType = this.pieceAt(square);
+    const pieceType = this.pieceAt(square);
 
     if (!this.pieceBelongsToPlayer(pieceType)) {
-      throw "invalid move, piece doesn't belong to current player";
+      throw new Error(`Invalid move: piece doesn't belong to current player`);
+    }
+
+    if (!this.validDestination(destination)) {
+      throw new Error(`Invalid move: destination square occupied by current player or off board`)
     }
 
     if (this.inCheck(this.turn)) {
-      //move must get out of check -> compare new position with old position
     }
 
-    if (this.validMove(square, pieceType, destination)) {
-      //must fix to work for en passant (the captured pawn needs to be deleted on
-      //a different square from where the capturing pawn goes)
-      this.board[destination] = this.board[square];
-      this.board[square] = 0;
-    } else {
-      throw "invalid move, piece cannot move to requested square";
+    if (!this.validMove(square, pieceType, destination)) {
+      throw new Error("Invalid move: piece cannot move to destination square");
     }
+
+    this.board[square] = 0;
+    this.board[destination] = pieceType;
+    this.endTurn();
+    this.history.push(this.board)
+    return this.board;
+  }
+
+  validDestination(destination){
+    console.log('a')
+    if (this.pieceBelongsToPlayer(this.board[destination])) return false;
+    console.log('b')
+    if (this.board[destination] === 7) return false
+    return true;
+  }
+
+  endTurn(){
+    this.turn === 'w' ? this.turn = 'b' : this.turn ='w';
   }
 
   pieceAt(square){
@@ -82,7 +99,7 @@ class Game {
   }
 
   pieceBelongsToPlayer(pieceType) {
-    if (this.turn === 'w' && pieceType > 0) return true;
+    if (this.turn === 'w' && pieceType > 0 && pieceType !== 7) return true;
     if (this.turn === 'b' && pieceType < 0) return true;
     return false;
   }
@@ -106,15 +123,25 @@ class Game {
   }
 
   validPawnMove(square, pieceType, destination) {
-    //check if can move 1 or two squares
-    //check if can en passant
+    return true;
   }
-  validKnightMove(square, pieceType, destination) {}
-  validBishopMove(square, pieceType, destination) {}
-  validRookMove(square, pieceType, destination) {}
-  validQueenMove(square, pieceType, destination) {}
+  validKnightMove(square, pieceType, destination) {
+    const legalMoves = [8,12,19,21];
+    console.log(square, destination)
+    if (!legalMoves.includes(Math.abs(square - destination))) return false;
+    return true;
+  }
+  validBishopMove(square, pieceType, destination) {
+    return true;
+  }
+  validRookMove(square, pieceType, destination) {
+    return true;
+  }
+  validQueenMove(square, pieceType, destination) {
+    return true;
+  }
   validKingMove(square, pieceType, destination) {
-    //check castle & normal moves
+    return true;
   }
 
   inCheck() {}
@@ -123,7 +150,16 @@ class Game {
 
 let game = new Game();
 
-console.log(game)
+//pawn moves
+// displayBoard(game.move(31,41))
+// displayBoard(game.move(81,71))
+
+//test knight moves
+displayBoard(game.move(27,27+19))
+displayBoard(game.move(92,92-19))
+displayBoard(game.move(46,65))
+displayBoard(game.move(73,65))
+
 
 
 /******* Display Functions ******/
