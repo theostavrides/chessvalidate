@@ -79,6 +79,7 @@ class Game {
       throw new Error("Invalid move: piece cannot move to destination square");
     }
 
+    //TODO -> handle enPassantSquares
     this.board[square] = 0;
     this.board[destination] = piece;
     this.history.push(this.board);
@@ -130,6 +131,76 @@ class Game {
   }
 
   validPawnMove(square, piece, destination) {
+    const legalMoves = [9,10,11,20];
+    const wDifference = destination - square;
+    const bDifference = square - destination;
+
+
+    //white
+    if (piece > 0) {
+      if (!legalMoves.includes(wDifference)) return false;
+
+      //capture left or right
+      if (wDifference === 9 || wDifference === 11) {
+        if ( //en passant
+          this.pieceAt(destination === 0) &&
+          (square > 60 && square < 69) &&
+          this.enPassantSquares.includes(destination)
+        ) { return true }
+        if (this.pieceAt(destination) < 0) return true;
+        return false;
+      }
+
+      //move forward 1
+      if (wDifference === 10) {
+        if (this.pieceAt(destination) === 0) return true;
+        return false;
+      }
+
+      //move forward 2
+      if (wDifference === 20) {
+        if (!(square > 30 && square < 39)) return false;
+        if (this.pieceAt(square + 10) !== 0) return false;
+        if (this.pieceAt(destination) !== 0) return false;
+        return true;
+      }
+      return false;
+    }
+
+
+
+    //black
+    if (piece < 0) {
+      if (!legalMoves.includes(bDifference)) return false;
+
+      //capture left or right
+      if (bDifference === 9 || bDifference === 11) {
+        if ( //en passant
+          this.pieceAt(destination === 0) &&
+          (square > 40 && square < 49) &&
+          this.enPassantSquares.includes(destination)
+        ) { return true }
+        if (this.pieceAt(destination) > 0) return true;
+        return false;
+      }
+
+      //move forward 1
+      if (bDifference === 10) {
+        if (this.pieceAt(destination) === 0) return true;
+        return false;
+      }
+
+      //move forward 2
+      if (bDifference === 20) {
+        if (!(square > 80 && square < 89)) return false;
+        if (this.pieceAt(square - 10) !== 0) return false;
+        if (this.pieceAt(destination) !== 0) return false;
+        return true;
+      }
+      return false;
+    }
+
+
     return true;
   }
   validKnightMove(square, piece, destination) {
